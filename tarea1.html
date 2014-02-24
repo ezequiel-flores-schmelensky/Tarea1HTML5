@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset= "UTF-8"/>
+		<title>Tarea 1</title>
+		<style>
+			body{
+				background-image: url('imagenes/fondo.png');
+			}
+			h1,h3,#latin{
+				color: white;
+			}
+			.azul{
+				background-color: rgb(10,91,147);
+			}
+			#tercerp{
+				color: rgb(10,91,147);
+			}
+			#latin,#video,h1{
+				text-align: center;
+			}
+			.red{
+				color: #A60400;
+			}
+			.verde{
+				color: #399200;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- note que tenemos una imagen anidada dentro del a etiqueta h1 -->
+		<!-- al hacer esto la imagen y el texto aparecen juntos -->
+		<h1><img src="imagenes/logo.png"/>Mi página web</h1>
+
+		<p class="azul" id="video">
+			<!-- aqui dentro defina un video -->	
+			<video controls="true" poster="imagenes/engrane.png">
+                <source src="videos/gadget.webm" type="video/webm"/>
+                <source src="videos/gadget.mp4" type="video/mp4"/>
+                <source src="videos/gadget.ogg" type="video/ogg"/>
+            </video>		
+		</p>
+
+		<h3>Nuestra misión:</h3>
+		<!-- PARRAFO: mision de la empresa -->
+		<p class="azul" id="latin">
+			"Lorem ipsum dolor sit amet, <span class="red">ROJO</span> adipisicing elit, sed do eiusmod 
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+			exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat<span class="red">ROJO</span>. Duis aute irure dolor 
+			in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+			sint occaecat cupidatat non proident, <span class="verde">VERDE</span>sunt in culpa qui officia 
+			deserunt mollit anim id est laborum."
+		</p>
+		<!-- PARRAFO: pie de pagina -->
+		<p id="tercerp">
+			"Mi página web" es una marca registrada, derechos reservados 2013
+		</p>
+	</body>
+</html>
