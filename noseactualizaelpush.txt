@@ -1,0 +1,17 @@
+Algunos de los motivos o soluciones que encontre son las siguientes:
+
+1. Checar que estes en el directorio correcto: cd ls cd.. son algunas herramientas
+2. Introducir las variables localmente de name y correo (quitando --global):
+		git config --global user.name "super"
+		git config --global user.name "super@hotmail.com"
+3. Intentar commits y push si no te deja aun, checar los siguiente:
+	-con: git log -1 //Muestra la ultima confirmacion del historico
+	-colocarte en la rama master con: git checkout master
+	- hacer pruebas: puedes rebisar estado con "git status" o revisar tus ramas con "git branch"
+4. Otro problema seria que no has fusionado tus ramas o bajada las actualizaciones de los demas:
+	-con: git fetch origen //actualizas pero no fusionas
+	-con: git merge origen/master //fusionas la rama origen fetch con la que estes
+	
+otros comandos utiles:
+			-git ls-remote origin
+			-git ls-remote
